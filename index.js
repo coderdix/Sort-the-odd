@@ -29,7 +29,7 @@ function sortArray(array) {
   // Add zero back to its position within the array
   let zeroPosition = array.indexOf(0)
   if (zeroPosition === -1) return output[output.length - 1]
-  output[0].splice(zeroPosition, 0, 0)
+  output[output.length - 1].splice(zeroPosition, 0, 0)
 
   // Output the final value 
   return output[output.length - 1]
