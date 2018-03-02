@@ -23,7 +23,7 @@ function sortArray(array) {
   output = oddArray.map(addEvenNumbers)
   function addEvenNumbers(number, index, array) {
     array.splice(evenPositions[index], 0, evenNumbers[index])
-    return array = array.filter(value => value !== undefined)
+    return array.filter(value => value !== undefined)
   }
   
   // Add zero back to its position within the array
@@ -32,7 +32,7 @@ function sortArray(array) {
   output[0].splice(zeroPosition, 0, 0)
 
   // Output the final value 
-  return output[0]
+  return output[output.length - 1]
 }
 
-console.log(sortArray([5, 3, 2, 8, 1, 4]))
+console.log(sortArray([2, 22, 1, 5, 4, 11, 37, 0]))
